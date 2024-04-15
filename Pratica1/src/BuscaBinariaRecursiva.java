@@ -5,6 +5,8 @@ public class BuscaBinariaRecursiva {
         int array[] = {3, 5, 6, 7, 10, 12, 1, 2};
         Arrays.sort(array);
         int elemento = 7;
+
+
         int resultado = buscaBinariaRecursiva(array, elemento);
         if (resultado < 0) {
             System.err.println("Elemento não encontrado");
@@ -12,7 +14,7 @@ public class BuscaBinariaRecursiva {
             System.out.println("| Elemento encontrado no índice: " + resultado + " | na posição: " + (resultado + 1) + " |");
         }
     }
-
+    
     public static int buscaBinariaRecursiva(int array[], int elemento) {
         return buscaRecursiva(array, elemento, 0, array.length - 1);
     }
